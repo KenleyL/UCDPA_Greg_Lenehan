@@ -68,6 +68,21 @@ sns.barplot(
 
 plt.show()
 
+#to see sales data from sum_month_order function
+print(sum_month_order)
+
+#the median of total sales
+stats = np.array([727160, 611133, 759620, 653023, 552995, 658699, 706053, 688716, 651023, 524515])
+print(np.median(stats))
+
+#iterator example
+value = stats.__iter__()
+item1 = value.__next__()
+print(item1)
+
+item2 = value.__next__()
+print(item2)
+
 #dropping duplicates. No duplicates in data
 drop_duplicates = cop_data.drop_duplicates()
 print(cop_data.shape,drop_duplicates.shape)
@@ -87,6 +102,9 @@ print(clf.fit(X_train, y_train))
 print(clf.predict(X_test))
 
 print(clf.score(X_test, y_test))
+
+
+
 
 
 
